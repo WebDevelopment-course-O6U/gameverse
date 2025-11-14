@@ -180,3 +180,134 @@ nav a:hover {
 
 	transform: scale(1.05);
 }
+
+/* Pricing Page Styles */
+.pricing-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 50px 60px;
+}
+
+.pricing-header {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.pricing-header h1 {
+	font-size: 48px;
+	margin-bottom: 15px;
+}
+
+.pricing-header p {
+	font-size: 20px;
+	color: rgb(199, 197, 197);
+}
+
+.pricing-cards {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.pricing-card {
+	background: rgba(255, 255, 255, 0.05);
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	padding: 40px 30px;
+	width: 320px;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+	transform: translateY(-10px);
+	border-color: #ff4d00;
+	box-shadow: 0 10px 30px rgba(255, 77, 0, 0.3);
+}
+
+.pricing-card.featured {
+	border-color: #ff4d00;
+	background: rgba(255, 77, 0, 0.1);
+}
+
+.plan-badge {
+	background: #ff4d00;
+	color: white;
+	padding: 5px 15px;
+	border-radius: 20px;
+	font-size: 14px;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.plan-name {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.plan-price {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.plan-price span {
+	font-size: 20px;
+	color: rgb(199, 197, 197);
+}
+
+.plan-duration {
+	color: rgb(199, 197, 197);
+	margin-bottom: 30px;
+}
+
+.plan-features {
+	list-style: none;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.plan-features li {
+	padding: 12px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	color: rgb(199, 197, 197);
+}
+
+.plan-features li:last-child {
+	border-bottom: none;
+}
+
+.plan-features li::before {
+	content: "✓ ";
+	color: #ff4d00;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.plan-button {
+	width: 100%;
+	padding: 15px 25px;
+	border-radius: 8px;
+	font-size: 18px;
+	background: transparent;
+	color: white;
+	border: 2px solid white;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.plan-button:hover {
+	background: #ff4d00;
+	border-color: #ff4d00;
+	transform: scale(1.05);
+}
+
+.featured .plan-button {
+	background: #ff4d00;
+	border-color: #ff4d00;
+}
+
+.featured .plan-button:hover {
+	background: #ff6a00;
+}
