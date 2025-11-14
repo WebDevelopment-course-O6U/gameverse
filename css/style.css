@@ -97,3 +97,29 @@ nav a:hover {
   width: 600px;
   filter: drop-shadow(0 0 20px #ff4d00);
 }
+
+.recommended {
+  text-align: center;
+  padding: 50px 60px;
+}
+
+.recommended h2 {
+  font-size:larger;
+  margin-bottom: 25px;
+}
+
+.games {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.games img {
+  width: 250px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.games img:hover {
+  transform: scale(1.05);
+}
