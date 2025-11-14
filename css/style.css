@@ -129,6 +129,19 @@ nav a:hover {
 	margin: 0 auto;
 }
 
+.back-arrow {
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+.back-arrow:hover {
+	color: black;
+}
+
 .search-box {
 	text-align: center;
 	margin-bottom: 50px;
