@@ -5,4 +5,31 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	background: radial-gradient(circle at top left, #320000, #0a0000);
+	color: white;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 60px;
+}
+
+.logo img {
+	width: 50px;
+}
+
+nav a {
+	margin:15px;
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ff4d00;
+}
+
+.dicor img{
+	width: 50px;
 }
