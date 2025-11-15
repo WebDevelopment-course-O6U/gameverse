@@ -592,6 +592,11 @@ nav a:hover {
 	color: #ff4d00;
 }
 
+.acc .subsection-title {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
 .acc .form-group {
 	margin-bottom: 25px;
 }
