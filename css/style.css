@@ -6,23 +6,51 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	background: radial-gradient(circle at top left, #320000, #0a0000);
+}
+
+body,
+nav a,
+.back-arrow,
+.search-box input,
+.plan-badge,
+.plan-button,
+.acc .form-group input,
+.cart .quantity-control button,
+.cart .promo-code input,
+.cart .promo-code button,
+.cart .checkout-btn,
+.cart .continue-shopping {
 	color: white;
 }
 
 header {
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px 60px;
 }
 
-.logo img {
+header,
+.main,
+.buttons,
+.games,
+.all-games,
+.pricing-cards,
+.cta-buttons,
+.acc .profile-image,
+.acc .order-card,
+.cart .quantity-control,
+.cart .summary-row {
+	display: flex;
+}
+
+.logo img,
+.dicor img,
+.socials img {
 	width: 50px;
 }
 
 nav a {
 	margin:15px;
-	color: white;
 	text-decoration: none;
 }
 
@@ -30,12 +58,7 @@ nav a:hover {
 	color: #ff4d00;
 }
 
-.dicor img{
-	width: 50px;
-}
-
 .main {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 80px 60px;
@@ -51,14 +74,23 @@ nav a:hover {
 }
 
 .main .text p {
-  font-size: 20px;
   margin-bottom: 30px;
   color: rgb(199, 197, 197);
   line-height: 1.6;
 }
 
+.main .text p,
+.pricing-header p,
+.plan-price span,
+.about-features li::before,
+.about-cta p,
+.acc .account-header p,
+.cart .cart-header p,
+.cart .cart-item-details h3 {
+	font-size: 20px;
+}
+
 .buttons {
-  display: flex;
   gap: 15px;
   margin-bottom: 30px;
 }
@@ -69,7 +101,12 @@ nav a:hover {
   font-size: medium;
 
 }
-.buttons button:hover {
+
+.buttons button:hover,
+.games img:hover,
+.all-games img:hover,
+.plan-button:hover,
+.stat-card:hover {
   transform: scale(1.05);
 }
 
@@ -89,18 +126,31 @@ nav a:hover {
   border-color: #ff4d00;
 }
 
-.socials img {
-  width: 50px;
-}
-
 .controller img {
   width: 600px;
   filter: drop-shadow(0 0 20px #ff4d00);
 }
 
 .recommended {
-  text-align: center;
   padding: 50px 60px;
+}
+
+.recommended,
+.search-box,
+.page h1,
+.pricing-header,
+.pricing-card,
+.about-hero,
+.about-values h2,
+.about-stats,
+.about-cta,
+.acc .account-header,
+.acc .profile-name,
+.acc .profile-email,
+.cart .cart-header,
+.cart .quantity-control span,
+.cart .empty-cart {
+	text-align: center;
 }
 
 .recommended h2 {
@@ -109,7 +159,6 @@ nav a:hover {
 }
 
 .games {
-  display: flex;
   justify-content: center;
   gap: 20px;
 }
@@ -120,22 +169,26 @@ nav a:hover {
   transition: transform 0.3s ease;
 }
 
-.games img:hover {
-  transform: scale(1.05);
-}
-
 .container {
 	max-width: 1400px;
 	margin: 0 auto;
 }
 
 .back-arrow {
-	color: white;
 	text-decoration: none;
-	font-size: 24px;
 	display: inline-block;
 	margin-bottom: 10px;
 	margin-top: 5px;
+}
+
+.back-arrow,
+.about-subtitle,
+.value-card h3,
+.acc .profile-name,
+.acc .subsection-title,
+.cart .cart-item-price,
+.cart .summary-row.total {
+	font-size: 24px;
 }
 
 .back-arrow:hover {
@@ -143,7 +196,6 @@ nav a:hover {
 }
 
 .search-box {
-	text-align: center;
 	margin-bottom: 50px;
 }
 
@@ -154,19 +206,26 @@ nav a:hover {
 	border-radius: 8px;
 	border: 2px solid white;
 	background: transparent;
-	color: white;
 	font-size: 18px;
 	outline: none;
 }
 
-.page h1 {
-	text-align: center;
+.page h1,
+.pricing-header h1,
+.plan-price,
+.about-hero h1,
+.stat-card h3,
+.acc .account-header h1,
+.acc .profile-image,
+.cart .cart-header h1 {
 	font-size: 48px;
+}
+
+.page h1 {
 	margin-bottom: 30px;
 }
 
 .all-games {
-	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 25px;
@@ -174,11 +233,6 @@ nav a:hover {
 
 .game-card {
 	flex: 0 0 calc(50% - 12.5px);
-}
-
-.all-games img:hover{
-
-	transform: scale(1.05);
 }
 
 /* Pricing Page Styles */
@@ -189,22 +243,18 @@ nav a:hover {
 }
 
 .pricing-header {
-	text-align: center;
 	margin-bottom: 60px;
 }
 
 .pricing-header h1 {
-	font-size: 48px;
 	margin-bottom: 15px;
 }
 
 .pricing-header p {
-	font-size: 20px;
 	color: rgb(199, 197, 197);
 }
 
 .pricing-cards {
-	display: flex;
 	justify-content: center;
 	gap: 30px;
 	flex-wrap: wrap;
@@ -216,7 +266,6 @@ nav a:hover {
 	border-radius: 16px;
 	padding: 40px 30px;
 	width: 320px;
-	text-align: center;
 	transition: all 0.3s ease;
 }
 
@@ -233,7 +282,6 @@ nav a:hover {
 
 .plan-badge {
 	background: #ff4d00;
-	color: white;
 	padding: 5px 15px;
 	border-radius: 20px;
 	font-size: 14px;
@@ -247,13 +295,11 @@ nav a:hover {
 }
 
 .plan-price {
-	font-size: 48px;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
 
 .plan-price span {
-	font-size: 20px;
 	color: rgb(199, 197, 197);
 }
 
@@ -291,7 +337,6 @@ nav a:hover {
 	border-radius: 8px;
 	font-size: 18px;
 	background: transparent;
-	color: white;
 	border: 2px solid white;
 	cursor: pointer;
 	transition: all 0.3s ease;
@@ -300,7 +345,6 @@ nav a:hover {
 .plan-button:hover {
 	background: #ff4d00;
 	border-color: #ff4d00;
-	transform: scale(1.05);
 }
 
 .featured .plan-button {
@@ -320,17 +364,14 @@ nav a:hover {
 }
 
 .about-hero {
-	text-align: center;
 	margin-bottom: 60px;
 }
 
 .about-hero h1 {
-	font-size: 48px;
 	margin-bottom: 15px;
 }
 
 .about-subtitle {
-	font-size: 24px;
 	color: rgb(199, 197, 197);
 }
 
@@ -363,7 +404,6 @@ nav a:hover {
 .about-values h2 {
 	font-size: 32px;
 	margin-bottom: 30px;
-	text-align: center;
 	color: #ff4d00;
 }
 
@@ -389,7 +429,6 @@ nav a:hover {
 }
 
 .value-card h3 {
-	font-size: 24px;
 	margin-bottom: 15px;
 }
 
@@ -420,7 +459,6 @@ nav a:hover {
 	color: #ff4d00;
 	font-weight: bold;
 	margin-right: 15px;
-	font-size: 20px;
 }
 
 .about-stats {
@@ -428,7 +466,6 @@ nav a:hover {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	gap: 30px;
 	margin: 50px 0;
-	text-align: center;
 }
 
 .stat-card {
@@ -440,12 +477,10 @@ nav a:hover {
 }
 
 .stat-card:hover {
-	transform: scale(1.05);
 	box-shadow: 0 5px 20px rgba(255, 77, 0, 0.4);
 }
 
 .stat-card h3 {
-	font-size: 48px;
 	color: #ff4d00;
 	margin-bottom: 10px;
 }
@@ -456,7 +491,6 @@ nav a:hover {
 }
 
 .about-cta {
-	text-align: center;
 	margin-top: 60px;
 	padding: 50px;
 	background: rgba(255, 255, 255, 0.05);
@@ -471,13 +505,11 @@ nav a:hover {
 }
 
 .about-cta p {
-	font-size: 20px;
 	color: rgb(199, 197, 197);
 	margin-bottom: 30px;
 }
 
 .cta-buttons {
-	display: flex;
 	gap: 15px;
 	justify-content: center;
 }
@@ -498,17 +530,14 @@ nav a:hover {
 }
 
 .acc .account-header {
-	text-align: center;
 	margin-bottom: 50px;
 }
 
 .acc .account-header h1 {
-	font-size: 48px;
 	margin-bottom: 15px;
 }
 
 .acc .account-header p {
-	font-size: 20px;
 	color: rgb(199, 197, 197);
 }
 
@@ -533,10 +562,8 @@ nav a:hover {
 	background: rgba(255, 77, 0, 0.2);
 	border: 3px solid #ff4d00;
 	margin: 0 auto 20px;
-	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 48px;
 	overflow: hidden;
 }
 
@@ -547,13 +574,10 @@ nav a:hover {
 }
 
 .acc .profile-name {
-	text-align: center;
-	font-size: 24px;
 	margin-bottom: 10px;
 }
 
 .acc .profile-email {
-	text-align: center;
 	color: rgb(199, 197, 197);
 	margin-bottom: 30px;
 }
@@ -593,7 +617,6 @@ nav a:hover {
 }
 
 .acc .subsection-title {
-	font-size: 24px;
 	margin-bottom: 20px;
 }
 
@@ -614,7 +637,6 @@ nav a:hover {
 	border-radius: 8px;
 	border: 2px solid rgba(255, 255, 255, 0.2);
 	background: rgba(255, 255, 255, 0.05);
-	color: white;
 	font-size: 16px;
 	outline: none;
 	transition: all 0.3s ease;
@@ -647,7 +669,6 @@ nav a:hover {
 	border-radius: 12px;
 	padding: 20px;
 	margin-bottom: 15px;
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	transition: all 0.3s ease;
@@ -688,17 +709,14 @@ nav a:hover {
 }
 
 .cart .cart-header {
-	text-align: center;
 	margin-bottom: 50px;
 }
 
 .cart .cart-header h1 {
-	font-size: 48px;
 	margin-bottom: 15px;
 }
 
 .cart .cart-header p {
-	font-size: 20px;
 	color: rgb(199, 197, 197);
 }
 
@@ -746,7 +764,6 @@ nav a:hover {
 }
 
 .cart .cart-item-details h3 {
-	font-size: 20px;
 	margin-bottom: 8px;
 }
 
@@ -757,7 +774,6 @@ nav a:hover {
 }
 
 .cart .cart-item-price {
-	font-size: 24px;
 	color: #ff4d00;
 	font-weight: bold;
 }
@@ -767,7 +783,6 @@ nav a:hover {
 }
 
 .cart .quantity-control {
-	display: flex;
 	align-items: center;
 	gap: 10px;
 	margin-bottom: 15px;
@@ -780,7 +795,6 @@ nav a:hover {
 	border-radius: 4px;
 	border: 2px solid rgba(255, 255, 255, 0.2);
 	background: rgba(255, 255, 255, 0.05);
-	color: white;
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
@@ -792,7 +806,6 @@ nav a:hover {
 
 .cart .quantity-control span {
 	min-width: 30px;
-	text-align: center;
 }
 
 .cart .remove-btn {
@@ -825,7 +838,6 @@ nav a:hover {
 }
 
 .cart .summary-row {
-	display: flex;
 	justify-content: space-between;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
@@ -838,7 +850,6 @@ nav a:hover {
 
 .cart .summary-row.total {
 	border-bottom: none;
-	font-size: 24px;
 	font-weight: bold;
 	margin-top: 10px;
 	padding-top: 15px;
@@ -859,7 +870,6 @@ nav a:hover {
 	border-radius: 8px;
 	border: 2px solid rgba(255, 255, 255, 0.2);
 	background: rgba(255, 255, 255, 0.05);
-	color: white;
 	font-size: 16px;
 	outline: none;
 	margin-bottom: 10px;
@@ -876,7 +886,6 @@ nav a:hover {
 	border-radius: 8px;
 	font-size: 16px;
 	background: transparent;
-	color: white;
 	border: 2px solid white;
 	cursor: pointer;
 	transition: all 0.3s ease;
@@ -894,7 +903,6 @@ nav a:hover {
 	border-radius: 8px;
 	font-size: 18px;
 	background: #ff4d00;
-	color: white;
 	border: 2px solid #ff4d00;
 	cursor: pointer;
 	transition: all 0.3s ease;
@@ -912,7 +920,6 @@ nav a:hover {
 	border-radius: 8px;
 	font-size: 16px;
 	background: transparent;
-	color: white;
 	border: 2px solid white;
 	cursor: pointer;
 	transition: all 0.3s ease;
@@ -925,7 +932,6 @@ nav a:hover {
 }
 
 .cart .empty-cart {
-	text-align: center;
 	padding: 60px 20px;
 }
 
@@ -975,9 +981,13 @@ nav a:hover {
 	}
 
 	.socials {
-		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.socials,
+	.cart .cart-item-actions {
+		display: flex;
 	}
 
 	.controller img {
@@ -1115,7 +1125,6 @@ nav a:hover {
 
 	.cart .cart-item-actions {
 		grid-column: 1 / -1;
-		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 10px;
@@ -1321,11 +1330,14 @@ nav a:hover {
 }
 
 @media screen and (max-width: 480px) {
-	header {
+	header,
+	.container {
 		padding: 15px;
 	}
 
-	.logo img {
+	.logo img,
+	.dicor img,
+	.socials img {
 		width: 35px;
 	}
 
@@ -1334,29 +1346,29 @@ nav a:hover {
 		font-size: 13px;
 	}
 
-	.dicor img {
-		width: 35px;
-	}
-
 	.main {
 		padding: 30px 15px;
 	}
 
-	.main h1 {
+	.main h1,
+	.plan-name,
+	.about-section h2,
+	.about-cta h2 {
 		font-size: 24px;
 	}
 
-	.main .text p {
+	.main .text p,
+	.buttons button,
+	.search-box input,
+	.plan-features li,
+	.about-section p,
+	.value-card p,
+	.about-features li {
 		font-size: 14px;
 	}
 
 	.buttons button {
 		padding: 12px 20px;
-		font-size: 14px;
-	}
-
-	.socials img {
-		width: 35px;
 	}
 
 	.controller img {
@@ -1364,25 +1376,20 @@ nav a:hover {
 		max-width: 280px;
 	}
 
-	.recommended {
+	.recommended,
+	.pricing-container,
+	.about-container,
+	.about-cta {
 		padding: 25px 15px;
 	}
 
-	.recommended h2 {
-		font-size: 20px;
-	}
-
-	/* Games page */
-	.container {
-		padding: 15px;
-	}
-
+	.recommended h2,
 	.back-arrow {
 		font-size: 20px;
 	}
 
+	/* Games page */
 	.search-box input {
-		font-size: 14px;
 		padding: 10px 12px;
 	}
 
@@ -1391,15 +1398,15 @@ nav a:hover {
 	}
 
 	/* Pricing page */
-	.pricing-container {
-		padding: 25px 15px;
-	}
-
 	.pricing-header h1 {
 		font-size: 28px;
 	}
 
-	.pricing-header p {
+	.pricing-header p,
+	.about-subtitle,
+	.stat-card p,
+	.about-cta p,
+	.cta-buttons button {
 		font-size: 16px;
 	}
 
@@ -1407,38 +1414,17 @@ nav a:hover {
 		padding: 30px 20px;
 	}
 
-	.plan-name {
-		font-size: 24px;
-	}
-
 	.plan-price {
 		font-size: 36px;
 	}
 
 	.plan-features li {
-		font-size: 14px;
 		padding: 10px 0;
 	}
 
 	/* About page */
-	.about-container {
-		padding: 25px 15px;
-	}
-
 	.about-hero h1 {
 		font-size: 28px;
-	}
-
-	.about-subtitle {
-		font-size: 16px;
-	}
-
-	.about-section h2 {
-		font-size: 24px;
-	}
-
-	.about-section p {
-		font-size: 14px;
 	}
 
 	.value-card {
@@ -1449,12 +1435,7 @@ nav a:hover {
 		font-size: 18px;
 	}
 
-	.value-card p {
-		font-size: 14px;
-	}
-
 	.about-features li {
-		font-size: 14px;
 		padding: 12px 0;
 	}
 
@@ -1466,24 +1447,7 @@ nav a:hover {
 		font-size: 36px;
 	}
 
-	.stat-card p {
-		font-size: 16px;
-	}
-
-	.about-cta {
-		padding: 25px 15px;
-	}
-
-	.about-cta h2 {
-		font-size: 24px;
-	}
-
-	.about-cta p {
-		font-size: 16px;
-	}
-
 	.cta-buttons button {
 		padding: 12px 20px;
-		font-size: 16px;
 	}
 }
